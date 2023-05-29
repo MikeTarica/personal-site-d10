@@ -1,0 +1,11 @@
+/**
+ * @file
+ * Visual styles for nodes.
+ */
+
+.node--unpublished {
+  background-color: #fff4f4;
+}
+h1 {
+  font-family: sans-serif;
+}
