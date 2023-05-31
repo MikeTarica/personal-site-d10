@@ -1,6 +1,9 @@
 base:
   version: VERSION
+  js:
+    js/full-site-logic.js: {}
   css:
+    
     component:
       
       css/components/global-styling.css: { }
@@ -48,11 +51,7 @@ base:
       css/components/textarea.css: {  }
         
       css/components/ui-dialog.css: {  }
-js:
-    js/components/full-site-logic.js: { }
-    dependencies:
-      - ""
-      - ""
+
 dialog:
   version: VERSION
   css:
