@@ -11,6 +11,7 @@ libraries:
   - mike_tarica_site/action-links
   - mike_tarica_site/breadcrumbs
   - mike_tarica_site/exposed-filters
+  - mike_tarica_site/icons
   - mike_tarica_site/messages
   - core/normalize
 libraries-extend:

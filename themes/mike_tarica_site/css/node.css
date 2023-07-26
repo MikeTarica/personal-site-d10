@@ -1,0 +1,13 @@
+/**
+ * @file
+ * Visual styles for nodes.
+ */
+.node--unpublished {
+  background-color: #fff4f4;
+}
+
+.node__content {
+  background-color: aquamarine;
+}
+
+/*# sourceMappingURL=node.css.map */

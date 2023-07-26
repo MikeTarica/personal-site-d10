@@ -1,0 +1,61 @@
+/* color brands */
+// primary colors
+$primary-col-1: #0C0032;
+$primary-col-2: #190061;
+$primary-col-3: #240090;
+$primary-col-4: #3500D3;
+$primary-col-5: #282828;
+// secondary color
+$secondary-col-1: #1a1a1d;
+$secondary-col-2: #4e4e50;
+$secondary-col-3: #6f2232;
+$secondary-col-4: #950740;
+$secondary-col-5: #C3073F;
+// article page colors
+$page-col-scheme-1: #000000;
+$page-col-scheme-2: #1c171e;
+$page-col-scheme-3: #c6bfc6;
+$page-col-scheme-4: #7a6d76;
+$page-col-scheme-5: #baa7ad;
+
+// banner color scheme
+$banner-col-scheme-1: #000000;
+$banner-col-scheme-2: #fcfcfc;
+$banner-col-scheme-3: #9d00ff;
+$banner-col-scheme-4: #7a6d76;
+$banner-col-scheme-5: #baa7ad;
+// GENTIC FONT COLOR
+$page-text-white: #f1ecec;
+
+/* Gradiants  */
+$theme-1-gradiant-main: linear-gradient(to right, rgba(2, 0, 36, 0) 0%, #c3073f87 25% #1c171e 56%, #c3073f87 100%);
+$theme-1-gradiant-main-sub: linear-gradient(to right, rgba(2, 0, 36, 0) 0%, rgba(255, 255, 255, 0.898) 56%, rgba(255, 42, 0, 0.513) 100%);
+$gradaint-theme-bg:#baa7ad2e;
+$theme-1-banner-overlay: linear-gradient(rgb(51 51 51) 0%, rgb(255 255 255 / 37%) 56%, rgb(255 42 0 / 20%) 100%);
+
+
+$font-stack: Helvetica,
+sans-serif,
+arial;
+
+:root {}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: $banner-col-scheme-3;
+
+  .page-title {
+    font-family: Arial, Helvetica, sans-serif;
+    color: $secondary-col-5;
+  }
+}
+
+.contextual-region {
+  font-family: Arial, Helvetica, sans-serif;
+  color: $banner-col-scheme-3;
+}
+
+.block .block-system .block-system-branding-block {
+  color: $secondary-col-2;
+  font-size: 20px;
+}
