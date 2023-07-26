@@ -2,16 +2,18 @@
 /* Gradiants  */
 h1 {
   font-family: Arial, Helvetica, sans-serif;
-  color: #9d00ff;
 }
 h1 .page-title {
-  font-family: Arial, Helvetica, sans-serif;
-  color: #C3073F;
+  padding: 0px;
+}
+
+.layout-content {
+  background-color: #7a6d76;
 }
 
 .contextual-region {
   font-family: Arial, Helvetica, sans-serif;
-  color: #9d00ff;
+  background-image: #baa7ad;
 }
 
 .block .block-system .block-system-branding-block {

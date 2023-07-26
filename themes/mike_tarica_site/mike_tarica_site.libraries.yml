@@ -1,111 +1,112 @@
 base:
   version: VERSION
   js:
-    js/full-site-logic.js: {}
+    
+    js/full-site-logic.js: { }
   css:
     
     component:
       
-      css/components/global-styling.css: { }
+      css/global-styling.css: { }
       
-      css/components/action-links.css: {  }
+      css/action-links.css: {  }
         
-      css/components/breadcrumb.css: {  }
+      css/breadcrumb.css: {  }
         
-      css/components/button.css: {  }
+      css/button.css: {  }
         
-      css/components/container-inline.css: {  }
+      css/container-inline.css: {  }
         
-      css/components/details.css: {  }
+      css/details.css: {  }
         
-      css/components/exposed-filters.css: {  }
+      css/exposed-filters.css: {  }
       
-      css/components/field.css: {  }
+      css/field.css: {  }
         
-      css/components/form.css: {  }
+      css/form.css: {  }
         
-      css/components/icons.css: {  }
+      css/icons.css: {  }
         
-      css/components/inline-form.css: {  }
+      css/inline-form.css: {  }
         
-      css/components/item-list.css: {  }
+      css/item-list.css: {  }
         
-      css/components/link.css: {  }
+      css/link.css: {  }
         
-      css/components/links.css: {  }
+      css/links.css: {  }
         
-      css/components/menu.css: {  }
+      css/menu.css: {  }
         
-      css/components/more-link.css: {  }
+      css/more-link.css: {  }
         
-      css/components/pager.css: {  }
+      css/pager.css: {  }
         
-      css/components/tabledrag.css: {  }
+      css/tabledrag.css: {  }
         
-      css/components/tableselect.css: {  }
+      css/tableselect.css: {  }
         
-      css/components/tablesort.css: {  }
+      css/tablesort.css: {  }
         
-      css/components/tabs.css: {  }
+      css/tabs.css: {  }
         
-      css/components/textarea.css: {  }
+      css/textarea.css: {  }
         
-      css/components/ui-dialog.css: {  }
+      css/ui-dialog.css: {  }
 
 dialog:
   version: VERSION
   css:
     component:
-      css/components/dialog.css: {  }
+      css/dialog.css: {  }
         
 dropbutton:
   version: VERSION
   css:
     component:
-      css/components/dropbutton.css: {  }
+      css/dropbutton.css: {  }
         
 file:
   version: VERSION
   css:
     component:
-      css/components/file.css: {  }
+      css/file.css: {  }
         
 image-widget:
   version: VERSION
   css:
     component:
-      css/components/image-widget.css: {  }
+      css/image-widget.css: {  }
 indented:
   version: VERSION
   css:
     component:
-      css/components/indented.css: {  }
+      css/indented.css: {  }
 messages:
   version: VERSION
   css:
     component:
-      css/components/messages.css: {  }
+      css/messages.css: {  }
         
 node:
   version: VERSION
   css:
     component:
-      css/components/node.css: {  }
+      css/node.css: {  }
         
 progress:
   version: VERSION
   css:
     component:
-      css/components/progress.css: {  }
+      css/progress.css: {  }
         
 search-results:
   version: VERSION
   css:
     component:
-      css/components/search-results.css: {  }
+      css/search-results.css: {  }
 user:
   version: VERSION
   css:
     component:
-      css/components/user.css: {  }
+      css/user.css: {  }
         

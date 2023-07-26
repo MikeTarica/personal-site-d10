@@ -24,7 +24,7 @@ $banner-col-scheme-2: #fcfcfc;
 $banner-col-scheme-3: #9d00ff;
 $banner-col-scheme-4: #7a6d76;
 $banner-col-scheme-5: #baa7ad;
-// GENTIC FONT COLOR
+// Genetic font color group
 $page-text-white: #f1ecec;
 
 /* Gradiants  */
@@ -41,18 +41,24 @@ arial;
 :root {}
 
 h1 {
-  font-family: Arial, Helvetica, sans-serif;
-  color: $banner-col-scheme-3;
+  font-family: Arial,
+    Helvetica,
+    sans-serif;
+
 
   .page-title {
-    font-family: Arial, Helvetica, sans-serif;
-    color: $secondary-col-5;
+
+    padding: 0px;
   }
+}
+
+.layout-content {
+  background-color: $page-col-scheme-4;
 }
 
 .contextual-region {
   font-family: Arial, Helvetica, sans-serif;
-  color: $banner-col-scheme-3;
+  background-image: $banner-col-scheme-5;
 }
 
 .block .block-system .block-system-branding-block {
