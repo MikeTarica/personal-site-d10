@@ -2,7 +2,7 @@ base:
   version: VERSION
   js:
     
-    js/full-site-logic.js: { }
+    js/components/full-site-logic.js: { }
   css:
     
     component:
