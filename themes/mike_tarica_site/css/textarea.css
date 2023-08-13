@@ -15,12 +15,31 @@ body {
 }
 body h1 {
   font-size: 35px;
+  margin: 15px;
 }
 body h2 {
   font-size: 32px;
+  margin: 15px;
 }
 body h3 {
   font-size: 30;
+  margin: 15px;
+}
+body h4 {
+  font-size: 29px;
+  margin: 15px;
+}
+body h5 {
+  font-size: 26px;
+  margin: 15px;
+}
+body h6 {
+  font-size: 22;
+  margin: 15px;
+}
+body p {
+  font-size: 10;
+  margin: 15px;
 }
 
 /*# sourceMappingURL=textarea.css.map */

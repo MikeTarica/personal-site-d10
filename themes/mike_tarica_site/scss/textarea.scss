@@ -9,6 +9,8 @@
   width: 100%;
   margin: 0;
   height: auto;
+
+
 }
 
 body {
@@ -16,13 +18,36 @@ body {
 
   h1 {
     font-size: 35px;
+    margin: 15px;
   }
 
   h2 {
     font-size: 32px;
+    margin: 15px;
   }
 
   h3 {
     font-size: 30;
+    margin: 15px;
+  }
+
+  h4 {
+    font-size: 29px;
+    margin: 15px;
+  }
+
+  h5 {
+    font-size: 26px;
+    margin: 15px;
+  }
+
+  h6 {
+    font-size: 22;
+    margin: 15px;
+  }
+
+  p {
+    font-size: 10;
+    margin: 15px;
   }
 }

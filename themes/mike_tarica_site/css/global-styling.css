@@ -7,6 +7,10 @@ h1 .page-title {
   padding: 0px;
 }
 
+.text-formatted {
+  background-image: linear-gradient(to right, rgba(2, 0, 36, 0) 0%, rgba(195, 7, 63, 0.5294117647) 25% #1c171e 56%, rgba(195, 7, 63, 0.5294117647) 100%);
+}
+
 .layout-content {
   background-color: #7a6d76;
 }
