@@ -18,3 +18,6 @@ final class StarterKit implements StarterKitInterface {
   }
 
 }
+if (isset($_ENV['PANTHEON_ENVIRONMENT'])) {
+  $settings['tome_static_directory'] = 'sites/default/files/private/tome_static';
+}
