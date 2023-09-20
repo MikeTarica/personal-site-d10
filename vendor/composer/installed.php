@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'drupal/legacy-project',
-        'pretty_version' => 'dev-master',
-        'version' => 'dev-master',
-        'reference' => '83a944e3af3355782075fddd8ff685ea0f008aad',
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => 'bf416af944b4d2dc817cf17ac2fa30011b911b1e',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -389,9 +389,9 @@
             'dev_requirement' => false,
         ),
         'drupal/legacy-project' => array(
-            'pretty_version' => 'dev-master',
-            'version' => 'dev-master',
-            'reference' => '83a944e3af3355782075fddd8ff685ea0f008aad',
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => 'bf416af944b4d2dc817cf17ac2fa30011b911b1e',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
