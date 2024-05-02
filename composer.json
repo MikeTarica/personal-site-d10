@@ -25,7 +25,8 @@
         "drupal/entity_usage": "^2.0@beta",
         "drupal/paragraphs": "^1.15",
         "drupal/search_api_db": "^1.29",
-        "drush/drush": "^11.5"
+        "drupal/tb_megamenu": "^3.0@alpha",
+        "drush/drush": "^12.5"
     },
     "conflict": {
         "drupal/drupal": "*"

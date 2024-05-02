@@ -7,7 +7,7 @@ let gulp = require('gulp'),
   postcss = require('gulp-postcss'),
   autoprefixer = require('autoprefixer'),
   postcssInlineSvg = require('postcss-inline-svg'),
-  browserSync = require('browser-sync').create()
+  browserSync = require('browser-sync').create(),
   pxtorem = require('postcss-pxtorem'),
 	postcssProcessors = [
 		postcssInlineSvg({

@@ -1,9 +1,36 @@
 /* color brands */
 /* Gradiants  */
-h1 {
+body {
+  background-color: #b8b8b8;
+  padding: 20px;
+}
+
+.region-primary-menu {
+  background-color: #c6bfc6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+li {
   font-family: Arial, Helvetica, sans-serif;
 }
-h1 .page-title {
+h1 .page-title,
+h2 .page-title,
+h3 .page-title,
+h4 .page-title,
+h5 .page-title,
+h6 .page-title,
+p .page-title,
+ol .page-title,
+ul .page-title,
+li .page-title {
   padding: 0px;
 }
 
