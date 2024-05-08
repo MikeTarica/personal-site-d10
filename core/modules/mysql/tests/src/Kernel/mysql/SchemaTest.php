@@ -317,8 +317,8 @@ class SchemaTest extends DriverSpecificSchemaTestBase {
    */
   public function testGeneratedInvisiblePrimaryKey(): void {
     $is_maria = method_exists($this->connection, 'isMariaDb') && $this->connection->isMariaDb();
-    if ($this->connection->databaseType() !== 'mysql' || $is_maria || version_compare($this->connection->version(), '8.0.30, '<')) {
-      $this->markTestSkipped('This test only runs on MySQL 8.0.30 and above');
+    if ($this->connection->databaseType() !== 'mysql' || $is_maria || version_compare($this->connection->version(), '8.1, '<')) {
+      $this->markTestSkipped('This test only runs on MySQL 8.1 and above');
     }
     try {
       $this->connection->query("SET sql_generate_invisible_primary_key = 1;")->execute();
