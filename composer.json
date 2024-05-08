@@ -15,7 +15,6 @@
         }
     ],
     "require": {
-        "php":">=8.1",
         "composer/installers": "^2.0",
         "drupal/bootstrap_sass": "^5.0",
         "drupal/core-composer-scaffold": "^10.0",
