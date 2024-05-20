@@ -2,20 +2,26 @@
  * @file
  * Visual styles for menu.
  */
+.menu {
+  overflow: hidden;
+}
+.menu .menu a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
 ul.menu {
-  margin-left: 1em;
-  /* LTR */
-  padding: 0;
   list-style: none outside;
   text-align: left;
-  position: absolute;
   text-decoration-line: none;
   text-combine-upright: none;
   display: flex;
   flex-wrap: wrap;
-  align-items: baseline;
-  justify-content: space-evenly;
-  align-content: stretch;
+  justify-content: left;
 }
 
 [dir=rtl] ul.menu {
@@ -41,11 +47,15 @@ ul.menu {
 
 .menu-item {
   margin: 0;
-  padding: 0px 55px 0 30px;
+  padding: 0px 25px 0 0px;
 }
 
 ul.menu a.is-active {
   color: #000;
+}
+ul.menu a.is-active menu:hover a {
+  display: block;
+  color: antiquewhite;
 }
 
 /*# sourceMappingURL=menu.css.map */
