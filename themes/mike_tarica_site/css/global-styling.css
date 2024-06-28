@@ -34,8 +34,9 @@ li .page-title {
   padding: 0px;
 }
 
-.text-formatted {
-  background-image: linear-gradient(to right, rgba(2, 0, 36, 0) 0%, rgba(195, 7, 63, 0.5294117647) 25% #1c171e 56%, rgba(195, 7, 63, 0.5294117647) 100%);
+.clearfix .text-formatted .field .field--name-body .field--type-text-with-summary .field--label-hidden .field__item {
+  font-size: 20px;
+  margin: 0 0 0 0;
 }
 
 .layout-content {
