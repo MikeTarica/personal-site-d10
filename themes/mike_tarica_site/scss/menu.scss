@@ -2,23 +2,43 @@
  * @file
  * Visual styles for menu.
  */
+nav {
+  .menu {
+    overflow: hidden;
+    list-style: none outside;
+    text-align: left;
+    text-decoration-line: none;
+    text-combine-upright: none;
 
-ul.menu {
-  margin-left: 1em;
-  /* LTR */
-  padding: 0;
-  list-style: none outside;
-  text-align: left;
-  position: absolute;
-  text-decoration-line: none;
-  text-combine-upright: none;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  justify-content: space-evenly;
-  align-content: stretch;
+    .menu-item {
+      float: left;
+      font-size: 16px;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .menu-item--expanded {}
+
+    ul.mike-tarica-site li:hover {
+      color: #fff;
+      background: #000;
+    }
+
+    ul.mike-tarica-site li a.active {
+      color: #fff;
+      background: #000;
+    }
+
+
+  }
 
 }
+
+ul.menu {}
 
 [dir="rtl"] ul.menu {
   margin-right: 1em;
@@ -27,25 +47,30 @@ ul.menu {
 }
 
 .menu-item--expanded {
-  list-style-type: circle;
-  list-style-image: url(../../images/icons/menu-expanded.png);
+  // list-style-type: circle;
+  // list-style-image: url(../../images/icons/menu-expanded.png);
 }
 
 .menu-item--collapsed {
-  list-style-type: disc;
-  list-style-image: url(../../images/icons/menu-collapsed.png);
+  // list-style-type: disc;
+  // list-style-image: url(../../images/icons/menu-collapsed.png);
   /* LTR */
 }
 
 [dir="rtl"] .menu-item--collapsed {
-  list-style-image: url(../../images/icons/menu-collapsed-rtl.png);
+  // list-style-image: url(../../images/icons/menu-collapsed-rtl.png);
 }
 
 .menu-item {
-  margin: 0;
-  padding: 0px 55px 0 30px;
+  // margin: 0;
+  // padding: 0px 25px 0 0px;
 }
 
 ul.menu a.is-active {
   color: #000;
+
+}
+
+.region-header {
+  position: relative;
 }

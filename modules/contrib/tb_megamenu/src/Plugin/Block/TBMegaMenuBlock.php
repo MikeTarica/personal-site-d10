@@ -27,21 +27,7 @@ class TBMegaMenuBlock extends BlockBase implements ContainerFactoryPluginInterfa
    *
    * @var string
    */
-  protected string $themeName;
-
-  /**
-   * The theme manager service.
-   *
-   * @var \Drupal\Core\Theme\ThemeManagerInterface
-   */
-  protected ThemeManagerInterface $themeManager;
-
-  /**
-   * The menu builder service.
-   *
-   * @var \Drupal\tb_megamenu\TBMegaMenuBuilderInterface
-   */
-  protected TBMegaMenuBuilderInterface $menuBuilder;
+  private ?string $themeName = null;
 
   /**
    * Constructs a TBMegaMenuBlock.
@@ -57,16 +43,14 @@ class TBMegaMenuBlock extends BlockBase implements ContainerFactoryPluginInterfa
    * @param \Drupal\tb_megamenu\TBMegaMenuBuilderInterface $menu_builder
    *   The menu builder service.
    */
-  public function __construct(array $configuration, $plugin_id, $plugin_definition, ThemeManagerInterface $theme_manager, TBMegaMenuBuilderInterface $menu_builder) {
+  public function __construct(array $configuration, $plugin_id, $plugin_definition, private readonly ThemeManagerInterface $themeManager, private readonly TBMegaMenuBuilderInterface $menuBuilder) {
     parent::__construct($configuration, $plugin_id, $plugin_definition);
-    $this->themeManager = $theme_manager;
-    $this->menuBuilder = $menu_builder;
   }
 
   /**
    * {@inheritdoc}
    */
-  public static function create(ContainerInterface $container, array $configuration, $plugin_id, $plugin_definition): TBMegaMenuBlock|ContainerFactoryPluginInterface|static {
+  public static function create(ContainerInterface $container, array $configuration, $plugin_id, $plugin_definition) {
     return new static(
       $configuration,
       $plugin_id,
@@ -79,7 +63,7 @@ class TBMegaMenuBlock extends BlockBase implements ContainerFactoryPluginInterfa
   /**
    * {@inheritdoc}
    */
-  public function build(): array {
+  public function build() {
     $menu_name = $this->getDerivativeId();
     $theme_name = $this->getThemeName();
     $menu = $this->menuBuilder->getMenus($menu_name, $theme_name);
@@ -90,7 +74,7 @@ class TBMegaMenuBlock extends BlockBase implements ContainerFactoryPluginInterfa
       '#theme' => 'tb_megamenu',
       '#menu_name' => $menu_name,
       '#block_theme' => $theme_name,
-      '#attached' => ['library' => ['tb_megamenu/base', 'tb_megamenu/styles']],
+      '#attached' => ['library' => ['tb_megamenu/theme.tb_megamenu']],
       '#post_render' => ['\Drupal\tb_megamenu\Controller\TBMegaMenuController::tbMegamenuAttachNumberColumns'],
     ];
   }
@@ -106,7 +90,7 @@ class TBMegaMenuBlock extends BlockBase implements ContainerFactoryPluginInterfa
    * @return array
    *   The configuration render array
    */
-  public function buildConfigurationForm(array $form, FormStateInterface $form_state): array {
+  public function buildConfigurationForm(array $form, FormStateInterface $form_state) {
     $rebuild_form = parent::buildConfigurationForm($form, $form_state);
     $rebuild_form['cache']['max_age']['#default_value'] = 0;
     return $rebuild_form;
@@ -115,7 +99,7 @@ class TBMegaMenuBlock extends BlockBase implements ContainerFactoryPluginInterfa
   /**
    * {@inheritdoc}
    */
-  public function getCacheTags(): array {
+  public function getCacheTags() {
     // Rebuild block when menu or config changes.
     $configName = "{$this->getDerivativeId()}__{$this->getThemeName()}";
     $cacheTags = parent::getCacheTags();
@@ -127,7 +111,7 @@ class TBMegaMenuBlock extends BlockBase implements ContainerFactoryPluginInterfa
   /**
    * {@inheritdoc}
    */
-  public function getCacheContexts(): array {
+  public function getCacheContexts() {
     // ::build() uses MenuLinkTreeInterface::getCurrentRouteMenuTreeParameters()
     // to generate menu tree parameters, and those take the active menu trail
     // into account. Therefore, we must vary the rendered menu by the active
@@ -144,7 +128,7 @@ class TBMegaMenuBlock extends BlockBase implements ContainerFactoryPluginInterfa
    * @return string
    *   The current theme name.
    */
-  public function getThemeName(): string {
+  public function getThemeName() {
     if (!isset($this->themeName)) {
       $this->themeName = $this->themeManager->getActiveTheme()->getName();
     }

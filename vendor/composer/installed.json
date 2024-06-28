@@ -2127,19 +2127,70 @@
             "install-path": null
         },
         {
-            "name": "drupal/tb_megamenu",
-            "version": "3.0.0-alpha4",
-            "version_normalized": "3.0.0.0-alpha4",
+            "name": "drupal/simple_megamenu",
+            "version": "2.1.0",
+            "version_normalized": "2.1.0.0",
             "source": {
                 "type": "git",
-                "url": "https://git.drupalcode.org/project/tb_megamenu.git",
-                "reference": "3.0.0-alpha4"
+                "url": "https://git.drupalcode.org/project/simple_megamenu.git",
+                "reference": "2.1.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/tb_megamenu-3.0.0-alpha4.zip",
-                "reference": "3.0.0-alpha4",
-                "shasum": "3a944fbcaaf5f1b28e0206ccfeb54a1bd24ee72f"
+                "url": "https://ftp.drupal.org/files/projects/simple_megamenu-2.1.0.zip",
+                "reference": "2.1.0",
+                "shasum": "1a3b94c71ce93bb1a09b359b9851519bb9aa8083"
+            },
+            "require": {
+                "drupal/core": "^9 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.1.0",
+                    "datestamp": "1678444088",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "flocondetoile",
+                    "homepage": "https://www.drupal.org/user/2006064"
+                }
+            ],
+            "description": "Provide a Megamenu entity which can be used on Menu link content to construct a Mega Menu",
+            "homepage": "https://www.drupal.org/project/simple_megamenu",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/simple_megamenu",
+                "issues": "https://www.drupal.org/project/issues/simple_megamenu"
+            },
+            "install-path": "../../modules/contrib/simple_megamenu"
+        },
+        {
+            "name": "drupal/tb_megamenu",
+            "version": "1.9.0",
+            "version_normalized": "1.9.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/tb_megamenu.git",
+                "reference": "8.x-1.9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/tb_megamenu-8.x-1.9.zip",
+                "reference": "8.x-1.9",
+                "shasum": "a7186e01527be01155833e857913586a14bfda21"
             },
             "require": {
                 "drupal/core": "^8 || ^9 || ^10 || ^11"
@@ -2147,11 +2198,11 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.0.0-alpha4",
-                    "datestamp": "1713052614",
+                    "version": "8.x-1.9",
+                    "datestamp": "1712869460",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Alpha releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 }
             },

@@ -2,20 +2,30 @@
  * @file
  * Visual styles for menu.
  */
-ul.menu {
-  margin-left: 1em;
-  /* LTR */
-  padding: 0;
+nav .menu {
+  overflow: hidden;
   list-style: none outside;
   text-align: left;
-  position: absolute;
   text-decoration-line: none;
   text-combine-upright: none;
+}
+nav .menu .menu-item {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
   display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  justify-content: space-evenly;
-  align-content: stretch;
+  justify-content: space-around;
+}
+nav .menu ul.mike-tarica-site li:hover {
+  color: #fff;
+  background: #000;
+}
+nav .menu ul.mike-tarica-site li a.active {
+  color: #fff;
+  background: #000;
 }
 
 [dir=rtl] ul.menu {
@@ -24,28 +34,16 @@ ul.menu {
   text-align: right;
 }
 
-.menu-item--expanded {
-  list-style-type: circle;
-  list-style-image: url(../../images/icons/menu-expanded.png);
-}
-
 .menu-item--collapsed {
-  list-style-type: disc;
-  list-style-image: url(../../images/icons/menu-collapsed.png);
   /* LTR */
-}
-
-[dir=rtl] .menu-item--collapsed {
-  list-style-image: url(../../images/icons/menu-collapsed-rtl.png);
-}
-
-.menu-item {
-  margin: 0;
-  padding: 0px 55px 0 30px;
 }
 
 ul.menu a.is-active {
   color: #000;
+}
+
+.region-header {
+  position: relative;
 }
 
 /*# sourceMappingURL=menu.css.map */

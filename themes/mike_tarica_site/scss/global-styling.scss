@@ -72,10 +72,12 @@ li {
   }
 }
 
-
-.text-formatted {
-  background-image: $theme-1-gradiant-main;
+// banner paragraph home page
+.clearfix .text-formatted .field .field--name-body .field--type-text-with-summary .field--label-hidden .field__item {
+  font-size: 20px;
+  margin: 0 0 0 0;
 }
+
 
 .layout-content {
   background-color: $page-col-scheme-4;
@@ -89,4 +91,20 @@ li {
 .block .block-system .block-system-branding-block {
   color: $secondary-col-2;
   font-size: 20px;
+}
+
+// Banner 
+.field--name-field-banner {
+  background-color: $theme-1-gradiant-main-sub;
+  position: absolute;
+  left: 1012px;
+
+  .field__item {
+    font-size: 65px;
+  }
+}
+
+// Label removal
+.field__label {
+  display: none;
 }
