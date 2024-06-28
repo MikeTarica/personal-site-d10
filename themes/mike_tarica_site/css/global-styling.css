@@ -52,4 +52,17 @@ li .page-title {
   font-size: 20px;
 }
 
+.field--name-field-banner {
+  background-color: linear-gradient(to right, rgba(2, 0, 36, 0) 0%, rgba(255, 255, 255, 0.898) 56%, rgba(255, 42, 0, 0.513) 100%);
+  position: absolute;
+  left: 1012px;
+}
+.field--name-field-banner .field__item {
+  font-size: 65px;
+}
+
+.field__label {
+  display: none;
+}
+
 /*# sourceMappingURL=global-styling.css.map */
